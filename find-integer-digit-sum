@@ -1,0 +1,11 @@
+n=int(input("Enter a number: ")) #Enter integer whose sum of digits we want to find.
+total=0
+if n>=1 and n<=1000:
+    while n!=0:
+        digit=n%10
+        total=total+digit
+        n=n//10
+    print("Sum of digits of the number is : ",total)
+else:
+    print("Entered number is not in the range (i.e. 1 to 1000)")
+
